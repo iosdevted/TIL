@@ -1,21 +1,18 @@
 <template>
   <div>
     <div class="titleContainer">
-      <h1>오늘 배운 건
-        <br>오늘 적자
+      <h1>Today
+        <br>I Learned
       </h1>
 
       <div class="infoContainer">
-        <div class="name">Jay Jin's TIL</div>
+        <div class="name">Ted's TIL</div>
         <ul>
           <li>
-            <a href="https://milooy.wordpress.com/">Blog</a>
+            <a href="https://sunggweon.dev">Blog</a>
           </li>
           <li>
-            <a href="https://github.com/milooy">GitHub</a>
-          </li>
-          <li>
-            <a href="https://soundcloud.com/hellojayjin">SoundCloud</a>
+            <a href="https://github.com/cielgrisdemoscou">GitHub</a>
           </li>
         </ul>
       </div>
@@ -35,7 +32,7 @@
 h1 {
   font-family: "Gugi", cursive;
   font-weight: 500;
-  border-bottom: 17px solid #ffd816;
+  border-bottom: 17px solid #997EFA;
   word-break: keep-all;
   font-size: 5rem;
 }
