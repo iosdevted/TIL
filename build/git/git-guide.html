@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Basic GIT Commands for Everyday Use | Today I Learned</title>
+    <meta name="generator" content="VuePress 1.8.1">
+    <link rel="icon" href="/TIL/logo.png">
+    <meta name="description" content="Sunggwon's Personal Wiki (Today I Learned)">
+    
+    <link rel="preload" href="/TIL/assets/css/0.styles.c8870fcb.css" as="style"><link rel="preload" href="/TIL/assets/js/app.8b609b94.js" as="script"><link rel="preload" href="/TIL/assets/js/2.25c8762d.js" as="script"><link rel="preload" href="/TIL/assets/js/23.58eceb13.js" as="script"><link rel="prefetch" href="/TIL/assets/js/10.f32c35e3.js"><link rel="prefetch" href="/TIL/assets/js/11.8bb025d6.js"><link rel="prefetch" href="/TIL/assets/js/12.27b61479.js"><link rel="prefetch" href="/TIL/assets/js/13.5f684150.js"><link rel="prefetch" href="/TIL/assets/js/14.7ab660db.js"><link rel="prefetch" href="/TIL/assets/js/15.d670bf4d.js"><link rel="prefetch" href="/TIL/assets/js/16.6c1ddfa0.js"><link rel="prefetch" href="/TIL/assets/js/17.4fcb9c94.js"><link rel="prefetch" href="/TIL/assets/js/18.fcf3f7fd.js"><link rel="prefetch" href="/TIL/assets/js/19.889f4bd5.js"><link rel="prefetch" href="/TIL/assets/js/20.03716f74.js"><link rel="prefetch" href="/TIL/assets/js/21.b6202dbc.js"><link rel="prefetch" href="/TIL/assets/js/22.0bd61d00.js"><link rel="prefetch" href="/TIL/assets/js/24.ba619788.js"><link rel="prefetch" href="/TIL/assets/js/25.5ec8ccfd.js"><link rel="prefetch" href="/TIL/assets/js/26.b4842a4d.js"><link rel="prefetch" href="/TIL/assets/js/27.de24d185.js"><link rel="prefetch" href="/TIL/assets/js/28.3641d4ad.js"><link rel="prefetch" href="/TIL/assets/js/29.d61672a4.js"><link rel="prefetch" href="/TIL/assets/js/3.4e555c87.js"><link rel="prefetch" href="/TIL/assets/js/30.cf2dbb4a.js"><link rel="prefetch" href="/TIL/assets/js/31.780b2c17.js"><link rel="prefetch" href="/TIL/assets/js/32.7d923246.js"><link rel="prefetch" href="/TIL/assets/js/33.f3e8ff88.js"><link rel="prefetch" href="/TIL/assets/js/34.56fd589c.js"><link rel="prefetch" href="/TIL/assets/js/35.af6430c5.js"><link rel="prefetch" href="/TIL/assets/js/36.033c46e9.js"><link rel="prefetch" href="/TIL/assets/js/37.3dd38eea.js"><link rel="prefetch" href="/TIL/assets/js/38.66325754.js"><link rel="prefetch" href="/TIL/assets/js/39.1f9f8358.js"><link rel="prefetch" href="/TIL/assets/js/4.a69e9fee.js"><link rel="prefetch" href="/TIL/assets/js/40.affc5419.js"><link rel="prefetch" href="/TIL/assets/js/41.a8a0fc94.js"><link rel="prefetch" href="/TIL/assets/js/42.f1ab7f68.js"><link rel="prefetch" href="/TIL/assets/js/43.23f10ef1.js"><link rel="prefetch" href="/TIL/assets/js/44.cea8b252.js"><link rel="prefetch" href="/TIL/assets/js/45.1aa23e0b.js"><link rel="prefetch" href="/TIL/assets/js/46.070e181e.js"><link rel="prefetch" href="/TIL/assets/js/47.8ee1d048.js"><link rel="prefetch" href="/TIL/assets/js/48.005a1046.js"><link rel="prefetch" href="/TIL/assets/js/49.18452bf6.js"><link rel="prefetch" href="/TIL/assets/js/5.de9146fe.js"><link rel="prefetch" href="/TIL/assets/js/50.546131a7.js"><link rel="prefetch" href="/TIL/assets/js/51.47f4a7cc.js"><link rel="prefetch" href="/TIL/assets/js/52.d451c52f.js"><link rel="prefetch" href="/TIL/assets/js/53.60128fc0.js"><link rel="prefetch" href="/TIL/assets/js/54.d8261ab8.js"><link rel="prefetch" href="/TIL/assets/js/55.9d221f59.js"><link rel="prefetch" href="/TIL/assets/js/56.11e353fa.js"><link rel="prefetch" href="/TIL/assets/js/57.eec504df.js"><link rel="prefetch" href="/TIL/assets/js/58.05c45dfe.js"><link rel="prefetch" href="/TIL/assets/js/59.c7725f45.js"><link rel="prefetch" href="/TIL/assets/js/6.fb42d0b4.js"><link rel="prefetch" href="/TIL/assets/js/60.ce44fca7.js"><link rel="prefetch" href="/TIL/assets/js/61.6d68ea1e.js"><link rel="prefetch" href="/TIL/assets/js/62.7683feea.js"><link rel="prefetch" href="/TIL/assets/js/63.f5fbae57.js"><link rel="prefetch" href="/TIL/assets/js/64.913898e0.js"><link rel="prefetch" href="/TIL/assets/js/65.8b15a441.js"><link rel="prefetch" href="/TIL/assets/js/66.60ae16f5.js"><link rel="prefetch" href="/TIL/assets/js/67.20c01649.js"><link rel="prefetch" href="/TIL/assets/js/68.fda439b1.js"><link rel="prefetch" href="/TIL/assets/js/69.f2cf2c91.js"><link rel="prefetch" href="/TIL/assets/js/7.c3964f10.js"><link rel="prefetch" href="/TIL/assets/js/70.5b07dc3d.js"><link rel="prefetch" href="/TIL/assets/js/71.33c7ffab.js"><link rel="prefetch" href="/TIL/assets/js/72.82f718d6.js"><link rel="prefetch" href="/TIL/assets/js/73.67cf04c3.js"><link rel="prefetch" href="/TIL/assets/js/74.14155dd3.js"><link rel="prefetch" href="/TIL/assets/js/75.72f4b1ba.js"><link rel="prefetch" href="/TIL/assets/js/76.334c567a.js"><link rel="prefetch" href="/TIL/assets/js/77.a049b414.js"><link rel="prefetch" href="/TIL/assets/js/78.b89ee610.js"><link rel="prefetch" href="/TIL/assets/js/8.c5c73bc8.js"><link rel="prefetch" href="/TIL/assets/js/9.a2e7de2a.js">
+    <link rel="stylesheet" href="/TIL/assets/css/0.styles.c8870fcb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/TIL/" class="home-link router-link-active"><!----> <span class="site-name">Today I Learned</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/cielgrisdemoscou/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://sunggweon.dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/cielgrisdemoscou/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://sunggweon.dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Swift / iOS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Views and View Controllers</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Graphics &amp; Animation</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Core Concepts</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Architecture Patterns</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Networking</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>RxSwift</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Map &amp; Location APIs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>UI &amp; UX</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CoreML &amp; ARKit</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Unit Test</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Data</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Git</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/TIL/git/git-guide.html" aria-current="page" class="active sidebar-link">Basic GIT Commands for Everyday Use</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/TIL/git/git-ignore.html" class="sidebar-link">When Git Ignore Doesn't work</a></li><li><a href="/TIL/git/pro-git.html" class="sidebar-link">Pro Git book, written by Scott Chacon and Ben Straub</a></li><li><a href="/TIL/git/rebase-with-sourcetree.html" class="sidebar-link">Rebase with sourcetree</a></li><li><a href="/TIL/git/trouble-shooting-on-console.html" class="sidebar-link">rebase 도중 더 이상 confilict 해결 할 것이 없는데 git add하라고 할 때.</a></li><li><a href="/TIL/git/rebase-vs-merge-commit.html" class="sidebar-link">Pull Request를 보내기 전에, Rebase를 해야 할까요 혹은 merge commit을 만들어야 할까요?</a></li><li><a href="/TIL/git/revert-certain-file.html" class="sidebar-link">특정 파일 특정 상태로 돌리기</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Université Paris 8</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Useful Articles</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="basic-git-commands-for-everyday-use"><a href="#basic-git-commands-for-everyday-use" class="header-anchor">#</a> Basic GIT Commands for Everyday Use</h1> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> init
+<span class="token comment"># 리포지토리 초기화. '.git'폴더 생성. 이 폴더에 현재 폴더와 관련된 관리 정보가 저장. working tree라고 부른다. 변경 내역 등 관리.</span>
+
+<span class="token function">git</span> status
+<span class="token comment"># 리포지토리 상태 표시. </span>
+
+<span class="token function">git</span> <span class="token function">add</span> 파일명
+<span class="token comment"># 스테이지 영역(커밋 전 임시 영역)에 파일 추가. </span>
+
+<span class="token function">git</span> commit -m <span class="token string">'첫 커밋'</span>
+<span class="token comment"># 스테이지 영역에 기록된 시점들 파일을 실제 리포지토리 변경 내역에 반영.</span>
+
+<span class="token function">git</span> log
+<span class="token comment"># 리포지토리에 커밋된 로그 확인. </span>
+
+<span class="token function">git</span> log --pretty<span class="token operator">=</span>short
+<span class="token comment"># 로그 확인시 첫 번째 요약 줄만 보여주기</span>
+
+<span class="token function">git</span> log README.md
+<span class="token comment"># 리드미 관련된 로그만 보기 (폴더 명도 가능)</span>
+
+<span class="token function">git</span> log -p
+<span class="token comment"># 커밋에서 변경된 내용 함께 확인. (뒤에 파일/폴더명 붙여도 됨)</span>
+
+<span class="token function">git</span> <span class="token function">diff</span>
+<span class="token comment"># working tree, 스테이지 영역, 최신 커밋 사이 변경 확인</span>
+
+<span class="token function">git</span> <span class="token function">diff</span> HEAD
+<span class="token comment"># 최신 commit과의 차이 확인</span>
+
+<span class="token function">git</span> branch
+<span class="token comment"># 브랜치 목록 표시, 현재 어떤 브랜치인지.</span>
+
+<span class="token function">git</span> checkout -b <span class="token string">'feature-A'</span>
+<span class="token comment"># feature-A 이름의 브랜치 만들고 그 브랜치로 이동</span>
+
+<span class="token function">git</span> merge --no--ff feature-A
+<span class="token comment"># 현재 브랜치에서 feature-A브랜치를 머지. 옵션은 머지 커밋도 함께 남기고 싶다는 뜻.</span>
+
+<span class="token function">git</span> log --graph
+<span class="token comment"># 브랜치를 시각적으로 확인</span>
+
+<span class="token function">git</span> reset --hard 커밋해시값
+<span class="token comment"># HEAD, 스테이지, Working tree를 특정 커밋으로 복원.</span>
+
+<span class="token function">git</span> reset HEAD^
+<span class="token function">git</span> reset HEAD~2 
+<span class="token comment"># 2개 커밋 되돌리기</span>
+
+<span class="token function">git</span> push origin +master 
+<span class="token comment"># +를 붙여주면 정보 손실 있어도 무시하고 푸쉬한다.</span>
+
+<span class="token function">git</span> reflog
+<span class="token comment"># 현재 브랜치 뿐만이 아니라 이 리포지토리에서 진행된 모든 로그 볼 수 있음</span>
+
+<span class="token function">git</span> commit --amend
+<span class="token comment"># 바로 전에 작성했던 커밋 메세지 수정</span>
+
+<span class="token function">git</span> commit -am <span class="token string">&quot;바로 애드하고 커밋하고 싶당&quot;</span>
+<span class="token comment"># add, commit 한번에 하기</span>
+
+<span class="token operator">&gt;</span> <span class="token function">git</span> rebase -i HEAD~2
+pick 7a34294 Add feature-C
+pick 6fsdfa2 Fix typo
+<span class="token comment"># 현재 브랜치의 HEAD(최신 commit)를 포함한 두 개의 변경 내역과 관련된 내용 보여짐. 이 두개를 합쳐 한 커밋으로 뭉개버리고 싶다. fix typo가 부끄러우니까!</span>
+
+pick 7a34294 Add feature-C
+fixup 6fsdfa2 Fix typo
+<span class="token comment"># 뭉개고 싶은 커밋에 'fixup'으로 고쳐주고 저장. </span>
+
+<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:사용자명/저장소이름.git
+<span class="token comment"># 주소의 저장소를 원격 저장소로 설정</span>
+
+<span class="token function">git</span> push -u origin master
+<span class="token comment"># -u옵션: 로컬 리포에 있는 현재 브랜치 upstream이 origin 리포의 master 브랜치로 설정.</span>
+
+<span class="token function">git</span> push -u origin feature-D
+<span class="token comment"># 원격의 feature-D브랜치로 push</span>
+
+<span class="token function">git</span> clone git@github<span class="token punctuation">..</span><span class="token punctuation">..</span>git
+<span class="token comment"># 주소의 리포지토리 받아오기</span>
+
+<span class="token function">git</span> branch -a
+<span class="token comment"># 로컬 리포지토리랑 원격 리포지토리 브랜치 모두 표시</span>
+
+<span class="token function">git</span> checkout -b feature-D origin/feature-D
+<span class="token comment"># 원격의 feature-D리포를 내가 새로 만든 feature-D브랜치로 체크아웃</span>
+</code></pre></div><h3 id="commit-message"><a href="#commit-message" class="header-anchor">#</a> Commit Message</h3> <ul><li>첫 번째 줄: 변경 내용 한 줄 요약</li> <li>두 번째 줄: 공백</li> <li>세 번째 줄 이후: 변경과 관련 내용 상세 기록</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/TIL/data/sql.html" class="prev">
+        PostgreSQL
+      </a></span> <span class="next"><a href="/TIL/git/git-ignore.html">
+        When Git Ignore Doesn't work
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/TIL/assets/js/app.8b609b94.js" defer></script><script src="/TIL/assets/js/2.25c8762d.js" defer></script><script src="/TIL/assets/js/23.58eceb13.js" defer></script>
+  </body>
+</html>
