@@ -13,38 +13,77 @@ module.exports = {
   ],
   themeConfig: {
     sidebar: [
+      // {
+      //   title: "Things I've Learned",
+      //   children: CONST.TILList
+      // },
       {
-        title: 'Monthly I Learned',
-        children: CONST.MILList
-      },{
-        title: 'iOS',
-        children: CONST.iOSList
-      },{
-        title: 'Swift',
+        title: 'Swift / iOS',
         children: CONST.SwiftList
+      }
+      // ,{
+      //   title: 'SwiftUI',
+      //   children: CONST.SwiftUIList
+      // }
+      ,{
+        title: 'iOS Development',
+        children: CONST.ViewList
       },{
-        title: 'Daily Coding',
-        children: CONST.DailyCodingList
+        title: 'Graphics & Animation',
+        children: CONST.GraphicList
       },{
-        title: 'UIImage',
-        children: CONST.UIImageList
+        title: 'Core Concepts',
+        children: CONST.CoreList
       },{
-        title: 'Design',
-        children: CONST.DesignList
+        title: 'Architecture Patterns',
+        children: CONST.ArchitectureList
+      },{
+        title: 'Networking',
+        children: CONST.NetworkingList
+      },{
+        title: 'SQL & Data',
+        children: CONST.DataList
+      },{
+        title: 'RxSwift',
+        children: CONST.RxswiftList
+      },{
+        title: 'Unit Test',
+        children: CONST.UnitTestList
+      },{
+        title: 'UI & UX',
+        children: CONST.UIUXList
+      },
+      // {
+      //   title: 'CoreML & ARKit',
+      //   children: CONST.CoreMLList
+      // },
+      
+      // {
+      //   title: 'Algorithm',
+      //   children: CONST.AlgorithmList
+      // },
+      {
+        title: 'Map & Location APIs',
+        children: CONST.MapList
       },{
         title: 'Git',
         children: CONST.GitList
-      },{
-        title: 'LISP',
+      },
+      {
+        title: 'Common Lisp',
         children: CONST.LISPList
-      }, {
-        title: 'ETC',
-        children: CONST.ETCList
+      },
+      {
+        title: 'Université Paris 8',
+        children: CONST.UniversityList
+      },{
+        title: 'Useful Articles',
+        children: CONST.ArticlesList
       }
     ],
     nav: [{
         text: 'GitHub',
-        link: 'https://github.com/cielgrisdemoscou/'
+        link: 'https://github.com/iosdevted/'
       }, {
         text: 'Blog',
         link: 'https://sunggweon.dev'

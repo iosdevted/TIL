@@ -1,8 +1,6 @@
-# 🎥 Kingfisher
+# [HowTo] Kingfisher
 
 This guide covers the most useful part of Kingfisher components. If you want to know the detail of them, please also check the full [API Reference](https://github.com/onevcat/Kingfisher/wiki/Cheat-Sheet).
-
-## How to use Kingfisher
 
 The view extension based APIs (for `UIImageView`, `NSImageView`, `UIButton` and `NSButton`) should be your first choice whenever possible. It keeps your code simple and elegant.
 
