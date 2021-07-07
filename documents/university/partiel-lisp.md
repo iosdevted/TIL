@@ -1,6 +1,6 @@
 # Préparation de partiel - Clisp
 
-## 2021 Epreuve 1 `리스트에서 rplacd 값만 구하고 출력`
+## 2021 Epreuve 1
 
 Soit une liste de doublets contenant des villes et un nombre de vaccins nécessaire pour chaque ville, construire récursivement une liste ne contenant que le nombre de vaccins et en faire le total.
 
@@ -41,7 +41,7 @@ Soit une liste de doublets contenant des villes et un nombre de vaccins nécessa
 => (1 2 3)
 ```
 
-## 2021 Epreuve 2 `트리형식의 리스트 값에서 필요없는 값만 뺴고 저장`
+## 2021 Epreuve 2 
 
 A partir d'un arbre (liste quelconque mais contenant exclusivement des atomes, pas de nombres ni de chaînes), supprimer les atomes ayant moins de 3 caractères, à l'aide d'une fonction chirurgicale récursive.
 
@@ -72,7 +72,7 @@ Vous avez le droit de faire des fonctions auxiliaires si ça vous facilite la t�
 => (HOW (NIL (ACWW (HOS (HOA)))) (HUA (NIL))) 
 ```
 
-## 2019 Epreuve 3 `중첩 리스트에서 원하는 값만 빼고 출력`
+## 2019 Epreuve 3 
 
 Dans les différents exercices, vous pouvez, si besoin est, écrire des sous-fonctions pour vous simplifier le travail.
 
@@ -100,8 +100,6 @@ Faire une fonction qui ramène la traduction d'un mot à partir de cette liste :
 => (line route cable)
 ```
 
-## `두번째 리스트 값만 다 빼고 출력`
-
 2. Faire une fonction qui récupère tous les mots en anglais de Traductions en supprimant les doublons.
 
 ```lisp
@@ -124,7 +122,7 @@ Faire une fonction qui ramène la traduction d'un mot à partir de cette liste :
 => (WORD LINE ROUTE CABLE)
 ```
 
-## 2019 Epreuve 4 `리스트 값을 바꾸고 저장`
+## 2019 Epreuve 4
 
 A partir de Traductions, fabriquez une liste dans laquelle il n'y a qu'une seule traduction pour chaque mot, à l'aide d'une fonction chirurgicale récursive.
 
@@ -151,7 +149,7 @@ Astuce : Commencez par écrire une fonction non chirurgicale (qui construit sans
 
 ```
 
-## 2017 Epreuve 5 `리스트 두개를 하나로 합치고 출력`
+## 2017 Epreuve 5
 
 Dans les différents exercices, vous pouvez, si besoin est, écrire des sous-fonctions pour vous simplifier le travail.
 
@@ -196,8 +194,6 @@ Faire une fonction récursive qui associe le budget au film :
 => ((FILM1 RÉALISATEUR1 100) (FILM2 RÉALISATEUR2 200) (FILM3 RÉALISATEUR1 300))
 ```
 
-## `리스트 하나에서 평균 값 구하고 출력`
-
 2. Faire une fonction récursive qui calcule le budget moyen à partir de la ListeB
 
 `(budget_moyen ListeB) => bugdet_moyen`
@@ -215,8 +211,6 @@ Faire une fonction récursive qui associe le budget au film :
 
 ### list-length
 
-lens 같은 역할의 clisp 버전.
-
 Dans les différents exercices, vous pouvez, si besoin est, écrire des sous-fonctions pour vous simplifier le travail.
 
 Soit la liste <étudiants>, ayant la forme :
@@ -224,8 +218,6 @@ Soit la liste <étudiants>, ayant la forme :
 `((étudiant1 (cours1 . note) (cours2 . note) ...) (étudiant2 (cours1 . note) ...) ... (étudiantn (cours1 . note) ...) )`
 
 Construire récursivement :
-
-## `리스트 첫번째 칸만 뽑고 출력`
 
 1. la liste des étudiants : (étudiant1 étudiant2 ... étudiantn)
 
@@ -245,8 +237,6 @@ Construire récursivement :
 (etudiant étudiants)
 => (ÉTUDIANT1 ÉTUDIANT2 ÉTUDIANT3) 
 ```
-
-## `두번째 칸에서 두번째 값만 뽑고 출력`
 
 2. la liste des cours suivi par un étudiant donné (sans les notes)
 
@@ -273,8 +263,6 @@ ex. (cours étudiant étudiants) => (cours1 cours2... )
 (print (cours 'étudiant1 étudiants))
 => (COURS1 COURS2) 
 ```
-
-## `두번째 칸에서 두번째 값만 뽑고 평균값 구하고 출력`
 
 3. la moyenne des notes obtenues par un étudiant donné
 
@@ -305,7 +293,7 @@ ex. (moyenne étudiant étudiants) => <somme des notes divisée par le nombre de
 
 ex. (moyenne cours étudiants) => <somme des notes divisée par le nombre d'étudiants )
 
-## 2017 Epreuve 7 `한 리스트를 복잡하게 수정하고 저장`
+## 2017 Epreuve 7
 
 Faire une fonction qui modifie chirurgicalement la liste <étudiants> pour remplacer la liste des cours et des notes par leur moyenne. On doit aboutir à :
 
@@ -336,7 +324,7 @@ Faire une fonction qui modifie chirurgicalement la liste <étudiants> pour rempl
 (print étudiants)
 ```
 
-## 2016 Epreuve 8 `두 리스트 합치고 출력`
+## 2016 Epreuve 8
 
 1. Soient deux listes plates, la première étant une liste de produits et la seconde une liste de prix.
 
@@ -381,8 +369,6 @@ On laisse tomber les produits qui n'ont pas de prix et les prix qui n'ont pas de
 
 ```
 
-## `리스트 값을 바꾸고 저장`
-
 2. Créer une fonction chirurgicale récursive qui fait la même chose mais en modifiant directement Liste_produits :
 
 (modifier Liste_produits Liste_prix)
@@ -410,7 +396,7 @@ Astuce : utiliser rplaca.
 
 ```
 
-## 2016 Epreuve 9 복잡한 구조의 리스트에서 원하는 값만 뽑고 출력
+## 2016 Epreuve 9
 
 On part d'un arbre contenant des produits groupés par catégories et dont les feuilles contiennent des prix ; par exemple :
 
@@ -436,7 +422,7 @@ Créer une liste des produits dont le prix est inférieur à une certaine valeur
 (F 4 arbre)
 ```
 
-## 2016 Epreuve 10 두 리스트에서 원하는 값만 출력
+## 2016 Epreuve 10
 
 à partir d'une liste associant les ressources produites par un pays
 donné et les quantités produites, d'une liste des cours des ressources
@@ -474,8 +460,6 @@ ressource donnée :
 => (res2 2000)
 ```
 
-## 두리스트를 합치고 출력
-
 faire une fonction récursive qui fait la même chose pour toutes les
 ressources disponibles dans le pays :
 
@@ -499,7 +483,7 @@ ressources disponibles dans le pays :
 => ((RES1 10 1000) (RES2 20 2000) (RES3 30 3000)) 
 ```
 
-## 2016 Epreuve 11 `한 리스트를 수정하고 저장`
+## 2016 Epreuve 11
 
 à l'aide d'une fonction chirurgicale récursive, modifiez la liste
 obtenue en 1.2 pour remplacer les quantités et les cours de chaque
@@ -521,58 +505,3 @@ quantité)
 ; (richesses liste)
 ; liste
 ```
-
-## À Savoir
-
-récursivement =>
-
-```lisp
-(defun garde-o (list)
-  (cond
-	((not list) nil)
-	((equal (car list) 'o) (cons 'o (garde-o (cdr list))))
-	(t (garde-o (cdr list))) ) )
-```
-
-contraire =>
-
-```lisp
-(defun garde-o (liste &aux result)
-  (loop 
-	(cond 
-	  ((not liste) (return result))
-	  ((equal (car liste) 'o) (push (pop liste) result))
-	  ((pop liste)) ) ) )
-```
-
-```lisp
- (defparameter *some-list* (list* 'one 'two 'three 'four)) =>  *some-list*
- *some-list* =>  (ONE TWO THREE . FOUR)
- (rplaca *some-list* 'uno) =>  (UNO TWO THREE . FOUR)
-
-(rplacd '(a) 'b) => (A . B) 
-(rplacd '(a . b) 'b) => (A . B) 
-(rplacd '(a) '(b)) => (A B) 
-
-(cons 'a '(b c d)) =>  (A B C D)
-(cons 1 2) =>  (1 . 2)
-```
-
-clisp에서 append는 list에 list을 삽입해야지 다른 언어와 같은 원하는 결과 나온다. 에로들어서
-
-```lisp
-(setq lst '(a b c)) =>  (A B C)
-(append lst '(d)) =>  (A B C D)
-```
-
-이렇게 넣는 값을 list로 넗어줘야지, 'd 와 같이 넣을 경우 (A B C . D)와 같은 결과가 나와버리니 조심해야한다.
-
-**append 이용할 시에는 무조건 확인할 것**
-
-list 안에 있는 값을 모두 더 하는 과정 같이 하나 하나 처리하고 싶은 경우 apply를 사용할 수 있다.
-
-```lisp
-(apply '+ '(1 2 3)) => 6
-```
-
-## 리스트 값을 수정할 경우에는 무조건 rplaca 또는 rplacd를 사용할 것

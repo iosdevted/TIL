@@ -1,6 +1,6 @@
 # Préparation de partiel - Python
 
-## 파일 읽고 쓰는 저장하는 법
+## How to save and read from a file
 
 ```python
 def lire_adn(filename):
@@ -9,8 +9,6 @@ def lire_adn(filename):
 
 print(lire_adn("ncov-s.txt"))
 ```
-
-[더 자세한 파이썬으로 파일 읽는 방법](https://www.pythontutorial.net/python-basics/python-read-text-file/)
 
 ```python
 f = open("demofile3.txt", "w")
@@ -54,7 +52,7 @@ with open("cryptogramme.txt", "r") as f :
         print(dechiffre_cesar(f.read(), 11), file=sortie)
 ```
 
-## 특정 문자만 바꾸기
+## Replace only specific characters
 
 ```python
 def transcrire_adn(seq):
@@ -68,7 +66,7 @@ transcrire_adn('AATGTCCAGTCAG')
 # 'AAUGUCCAGUCAG'
 ```
 
-## 문자 순서 바꿔서 나열하기
+## Rearrange the order of letters
 
 ```python
 def decalage(distance):
@@ -82,7 +80,7 @@ print(decalage(6))
 #GHIJKLMNOPQRSTUVWXYZABCDEF
 ```
 
-## 특정 수 만큼 리스트 끊기
+## Break the list by a certain number
 
 ```python
 def arn_vers_codons(seq):
@@ -95,7 +93,7 @@ arn_vers_codons('AAUGUCCAGUCAGUU')
 #['AAU', 'GUC', 'CAG', 'UCA', 'GUU']
 ```
 
-## 두 list 한 번에 읽고 합치기
+## Read and merge two lists at once
 
 ```python
 def table_cesar(distance):
@@ -107,7 +105,7 @@ def table_cesar(distance):
     return result
 ```
 
-## Dictionary에서 원하는 값 찾기
+## Find certain word in Dictionary
 
 ```python
 def traduire_arn(seq):
@@ -124,7 +122,7 @@ def traduire_arn(seq):
 
 get을 사용하면 key에 해당하는 value 값을 찾을 수 있다.
 
-## Dictionary 사용법
+## Dictionary
 
 ```python
 inverse = {}
@@ -169,7 +167,7 @@ encode('12 34', {'1': 'A', '2': 'B', '3': 'C', '4': 'D'})
 
 get을 사용할 경우, 원하는 값을 찾지 못 하였을 경우, 다른 값을 넣어줄 수 있다.
 
-## python print format
+## Python print format
 
 ```python
 print("{} : {}".format(result, ", ".join(result2)))
@@ -197,7 +195,8 @@ print(list(x))
 => [5, 6, 6]
 ```
 
-## `행렬 자동으로 만들기`
+## Create Matrix Automatically
+
 ```python
 for i in range(3):
     M.append(list(map(lambda x: 4 * i + x, range(1, 5))))
@@ -208,7 +207,8 @@ M = [[1,  2,  3,  4],
      [9, 10, 11, 12]]
 ```
 
-## `행렬 속 단어 찾기`
+## Find a word in a matrix
+
 ```python
 #search the word
 def col(mat, j):
@@ -220,7 +220,8 @@ def col(mat, j):
 print(col(M, 1))
 ```
 
-## `matrice creuse 형식으로 만들기`
+## Matrice creuse
+
 ```python
 # matrice creuse
 def write_sparse_matrix(mat, filename):
@@ -247,7 +248,7 @@ sM = [   # matrice creuse pour le test
 write_sparse_matrix(sM, 'sparse.txt')
 ```
 
-## vice versa 행렬 뒤집기
+## Flip matrices
 
 ```python
 M = [[1, 4, 7, 5], [8, 2, 3, 0], [9, 7, 5, 4]]
@@ -264,7 +265,7 @@ transpose(M)
 #[[1, 8, 9], [4, 2, 7], [7, 3, 5], [5, 0, 4]]
 ```
 
-## 시간차이 구하기
+## Find time difference
 
 ```python 
 def calc_diff(dt1, dt2):
@@ -279,8 +280,7 @@ calc_diff("2012-10-02 20:10:00", "2012-10-05 15:20:00")
 
 [% format](https://python-reference.readthedocs.io/en/latest/docs/str/formatting.html)
 
-
-## 자연수 뒤집어 배열로 만들기
+## Flip natural numbers to form an array
 
 ```python
 '''
@@ -297,7 +297,7 @@ def digit_reverse(n):
 print("result : {}".format(digit_reverse(12345)))
 ```
 
-## 행렬의 덧셈
+## Addition of matrices
 
 ```python
 '''
@@ -319,7 +319,7 @@ def solution2(arr1, arr2):
     return answer
 ```
 
-## 최댓값과 최솟값
+## Max, Min
 
 ```python
 '''

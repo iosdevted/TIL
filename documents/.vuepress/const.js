@@ -137,7 +137,6 @@ exports.GitList = [
 ];
 
 exports.LISPList = [
-  "lisp/partiel.md",
   "lisp/all.md"
 ];
 
@@ -145,6 +144,7 @@ exports.UniversityList = [
   "university/dissertation.md",
   "university/partiel-info.md",
   "university/partiel-python.md",
+  "university/partiel-lisp.md",
   "university/partiel-bdd.md"
 ];
 
